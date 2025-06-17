@@ -7,96 +7,120 @@
   <meta name="description" content="Anurag Sinha Resume">
   <meta name="author" content="Anurag Sinha">
   <title>Anurag Sinha | Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #007acc;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .contact, .timeplace {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .company {
+      font-weight: normal;
+      color: #007acc;
+    }
+
+    .github-section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
     <h1>Anurag Sinha</h1>
-    <p class="contact">Senior Software Engineer | anuragsinha09@gmail.com | +91 95990 99036 | <a href="https://linkedin.com/in/anurag-sinha-516417bb">LinkedIn</a></p>
+    <p class="contact">Senior Software Engineer | anuragsinha09@gmail.com | +91 95990 99036 | <a href="https://linkedin.com/in/anurag-sinha-516417bb">LinkedIn</a> | <a href="https://github.com/anuragsinha">GitHub</a></p>
 
     <div class="section">
-      <h2>Profile</h2>
-      <p>Senior Software Engineer with 9+ years of experience in CI/CD, DevEx tooling, and platform engineering. Skilled in designing scalable infrastructure, improving developer productivity, and leading cross-platform initiatives across Android, iOS, web, and backend.</p>
+      <h2>🔒 This Resume is Password Protected</h2>
+      <p>Please enter the password to view the full content:</p>
+      <input type="password" id="password" placeholder="Enter password">
+      <button onclick="checkPassword()">Submit</button>
+      <p id="error" style="color:red; display:none;">Incorrect password.</p>
     </div>
 
-    <div class="section">
-      <h2>Experience</h2>
+    <div id="resumeContent" style="display:none;">
+      <!-- Full resume content would be here -->
 
-      <div class="job">
-        <h3>Senior Software Engineer – <span class="company">JioHotstar</span></h3>
-        <p class="timeplace">Feb 2025 – Present | Remote, India</p>
+      <div class="section github-section">
+        <h2>GitHub Stats</h2>
+        <img src="https://github-readme-stats.vercel.app/api?username=anuragsinha&show_icons=true&theme=default" alt="Anurag Sinha GitHub Stats">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuragsinha&layout=compact&theme=default" alt="Top Languages">
+      </div>
+
+      <div class="section">
+        <h2>Open Source Projects</h2>
         <ul>
-          <li>Developed Client Release Console (CRC) integrating release metrics and automation from App Store, Play Store, Crashlytics, and Amplitude.</li>
-          <li>Built Game Marshall Automation for IPL matches with autoscaling and real-time validation.</li>
-          <li>Integrated Gen-AI into CI/CD for auto app review.</li>
-          <li>Optimized Docker pulls and remote caching to reduce build times.</li>
+          <li><strong>Client Release Console (CRC)</strong> – Unified dashboard for Play Store, App Store, and analytics integrations.</li>
+          <li><strong>Game Marshall Automation</strong> – Live match assistant tool for IPL scaling and validations.</li>
+          <li><strong>XCRemoteCache Setup</strong> – Reduced iOS build time across PRs using remote build caching.</li>
+          <li><strong>Nexus Mirror for CI</strong> – Faster Docker pulls, artifact proxying, and versioning for CI/CD pipelines.</li>
         </ul>
       </div>
 
-      <div class="job">
-        <h3>Senior Software Engineer – <span class="company">Disney+ Hotstar</span></h3>
-        <p class="timeplace">Sep 2022 – Feb 2025 | Remote, India</p>
+      <div class="section">
+        <h2>Dev Community Contributions</h2>
         <ul>
-          <li>Designed CI/CD infrastructure and centralized build runners.</li>
-          <li>Built GitHub Large Runners, Android Emulator infra, and coverage tools.</li>
-          <li>Implemented Nexus repo and one-click rollback systems.</li>
-          <li>Simplified CD setup for 400+ services and integrated telemetry in pipelines.</li>
+          <li>Actively mentor junior engineers and review open-source infrastructure tools.</li>
+          <li>Contributed to GitHub Actions optimizations for large monorepos.</li>
+          <li>Published internal SOPs for release automation and CI performance tuning.</li>
+          <li>Built and shared CI/CD scripts for modular service onboarding.</li>
         </ul>
       </div>
 
-      <div class="job">
-        <h3>SDE-2, Engineering Productivity – <span class="company">Disney+ Hotstar</span></h3>
-        <p class="timeplace">Apr 2019 – Sep 2022 | Remote, India</p>
-        <ul>
-          <li>Automated validation for live and VOD content.</li>
-          <li>Led migration of recommender systems and mobile test infra.</li>
-        </ul>
+      <div class="section">
+        <h2>Total GitHub Contributions</h2>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=anuragsinha&theme=default" alt="GitHub Streak">
+        <img src="https://github-contribution-stats.vercel.app/api/?username=anuragsinha" alt="Contribution Stats">
       </div>
-
-      <div class="job">
-        <h3>Software Engineer – <span class="company">Deutsche Telekom</span></h3>
-        <p class="timeplace">Jul 2018 – Apr 2019 | Gurgaon, India</p>
-        <ul>
-          <li>Built mobile UI automation across 11+ device variants.</li>
-          <li>Reduced test cycle time by 60%.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Software Engineer – <span class="company">Hike Messenger / Snapdeal</span></h3>
-        <p class="timeplace">2016 – 2018 | Delhi NCR</p>
-        <ul>
-          <li>Built UI and payout automation systems for finance and mobile apps.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Key Achievements</h2>
-      <ul>
-        <li>Architected Hotstar’s CI/CD platform, improving release velocity and reducing manual ops.</li>
-        <li>Scaled backend systems to support 100M+ users.</li>
-        <li>Reduced service onboarding from 200 lines to 20 lines via modular pipelines.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>M.Sc. Computer Science</strong> – Delhi University (2014 – 2016)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Java, Kotlin, Swift, Python</li>
-        <li><strong>Tools:</strong> GitHub Actions, Jenkins, Terraform, Docker, Gradle, Xcode</li>
-        <li><strong>Systems:</strong> CI/CD, Remote Build Caching, Test Automation, Release Rollbacks</li>
-      </ul>
     </div>
   </div>
+
+  <script>
+    const correctPassword = "anurag2025"; // You can change this password
+
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      if (input === correctPassword) {
+        document.getElementById("resumeContent").style.display = "block";
+        document.querySelector(".section").style.display = "none";
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 </html>
