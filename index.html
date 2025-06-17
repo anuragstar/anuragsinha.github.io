@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Anurag Sinha Resume" />
-  <meta name="author" content="Anurag Sinha" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anurag Sinha Resume">
+  <meta name="author" content="Anurag Sinha">
   <title>Anurag Sinha | Resume</title>
   <style>
     body {
@@ -23,9 +23,7 @@
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3 {
       color: #007acc;
     }
 
@@ -34,8 +32,7 @@
       text-decoration: none;
     }
 
-    .contact,
-    .timeplace {
+    .contact, .timeplace {
       font-size: 14px;
       color: #555;
     }
@@ -64,148 +61,135 @@
 <body>
   <div class="container">
     <h1>Anurag Sinha</h1>
-    <p class="contact">
-      Senior Software Engineer |
-      anuragstar09@gmail.com |
-      +91 95990 99036 |
-      <a href="https://linkedin.com/in/anurag-sinha-516417bb">LinkedIn</a> |
-      <a href="https://github.com/anuragstar">GitHub</a>
-    </p>
+    <p class="contact">Senior Software Engineer | anuragstar09@gmail.com | +91 95990 99036 | <a href="https://linkedin.com/in/anurag-sinha-516417bb">LinkedIn</a> | <a href="https://github.com/anuragstar">GitHub</a></p>
 
     <div class="section">
       <h2>🔒 This Resume is Password Protected</h2>
       <p>Please enter the password to view the full content:</p>
-      <input type="password" id="password" placeholder="Enter password" />
+      <input type="password" id="password" placeholder="Enter password">
       <button onclick="checkPassword()">Submit</button>
-      <p id="error" style="color: red; display: none">Incorrect password.</p>
+      <p id="error" style="color:red; display:none;">Incorrect password.</p>
     </div>
 
-    <div id="resumeContent" style="display: none;">
-      <!-- Resume Summary -->
+    <div id="resumeContent" style="display:none;">
       <div class="section">
-        <h2>Professional Summary</h2>
-        <p>
-          Senior Software Engineer with 9+ years of experience specializing in CI/CD, Developer Productivity, and Platform Engineering. Proven expertise in building developer tooling, automating release workflows, and optimizing infrastructure for scale. Key contributor to Hotstar's CI/CD platform, release automation, and productivity frameworks.
-        </p>
-      </div>
+  <h2>Professional Summary</h2>
+  <p>Senior Software Engineer with 9+ years of experience specializing in CI/CD, Developer Productivity, and Platform Engineering. Proven expertise in building developer tooling, automating release workflows, and optimizing infrastructure for scale. Key contributor to Hotstar's CI/CD platform, release automation, and productivity frameworks.</p>
+</div>
 
-      <!-- Experience -->
-      <div class="section">
-        <h2>Experience</h2>
+<div class="section">
+  <h2>Experience</h2>
+  <h3>Senior Software Engineer – <span class="company">JioHotstar</span></h3>
+  <p class="timeplace">Feb 2025 – Present | Remote, India</p>
+  <ul>
+    <li>Developed Client Release Console (CRC) for automated app rollouts across major platforms.</li>
+    <li>Built Game Marshall Automation Tool for orchestrating IPL match events, enabling autoscaling and real-time validation.</li>
+    <li>Integrated GenAI into CI/CD for faster app reviews.</li>
+    <li>Implemented Docker mirror registry and remote build caching to accelerate CI performance.</li>
+  </ul>
 
-        <h3>Senior Software Engineer – <span class="company">JioHotstar</span></h3>
-        <p class="timeplace">Feb 2025 – Present | Remote, India</p>
-        <ul>
-          <li>Developed Client Release Console (CRC)</li>
-          <li>Built Game Marshall Automation Tool for IPL</li>
-          <li>Integrated GenAI into CI/CD workflows</li>
-          <li>Improved CI performance with Docker mirror and remote caching</li>
-        </ul>
+  <h3>Senior Software Engineer – <span class="company">Disney+ Hotstar</span></h3>
+  <p class="timeplace">Sep 2022 – Feb 2025 | Remote, India</p>
+  <ul>
+    <li>Created CI/CD infra, Mac runners (10,000+ jobs/day), and code coverage tooling.</li>
+    <li>Deployed high-availability Nexus artifact repository and rollback/hotfix systems.</li>
+    <li>Streamlined pipeline setup for 400+ services and standardized canary releases.</li>
+    <li>Introduced CI telemetry and upgraded Terraform infrastructure.</li>
+  </ul>
 
-        <h3>Senior Software Engineer – <span class="company">Disney+ Hotstar</span></h3>
-        <p class="timeplace">Sep 2022 – Feb 2025 | Remote, India</p>
-        <ul>
-          <li>Built CI/CD infra, 10k+ Mac builds/day, coverage tooling</li>
-          <li>Deployed Nexus artifact repo and rollback system</li>
-          <li>Standardized canary pipelines and introduced telemetry</li>
-        </ul>
+  <h3>SDE-2, Engineering Productivity – <span class="company">Disney+ Hotstar</span></h3>
+  <p class="timeplace">Apr 2019 – Sep 2022 | Remote, India</p>
+  <ul>
+    <li>Automated live/VOD validation and mobile UI testing frameworks.</li>
+    <li>Led recommender system migration to more scalable infrastructure.</li>
+  </ul>
 
-        <h3>SDE-2 – <span class="company">Disney+ Hotstar</span></h3>
-        <p class="timeplace">Apr 2019 – Sep 2022 | Remote, India</p>
-        <ul>
-          <li>Led UI testing infra and VOD/live content validation</li>
-        </ul>
+  <h3>Software Engineer – <span class="company">Deutsche Telekom</span></h3>
+  <p class="timeplace">Jul 2018 – Apr 2019 | Gurgaon, India</p>
+  <ul>
+    <li>Built UI automation framework for 11+ mobile variants and reduced test time by 60%.</li>
+  </ul>
 
-        <h3>Software Engineer – <span class="company">Deutsche Telekom</span></h3>
-        <p class="timeplace">Jul 2018 – Apr 2019 | Gurgaon, India</p>
-        <ul>
-          <li>Built UI automation for 11+ device variants</li>
-        </ul>
+  <h3>Software Engineer – <span class="company">Hike Messenger & Snapdeal</span></h3>
+  <p class="timeplace">2016 – 2018 | Delhi NCR, India</p>
+  <ul>
+    <li>Automated payout workflows, crash wrappers, and CI test integration for mobile apps.</li>
+  </ul>
+</div>
 
-        <h3>Software Engineer – <span class="company">Hike / Snapdeal</span></h3>
-        <p class="timeplace">2016 – 2018 | Delhi NCR</p>
-        <ul>
-          <li>Automated finance workflows and test pipelines</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>Key Achievements</h2>
+  <ul>
+    <li>Architected Hotstar’s CI/CD system from scratch, boosting deployment speed and reducing manual intervention.</li>
+    <li>Scaled platform capabilities from 1M to 100M+ users.</li>
+    <li>Reduced CI/CD configuration complexity from 200+ lines to just 20 via modular onboarding.</li>
+  </ul>
+</div>
 
-      <!-- Achievements -->
-      <div class="section">
-        <h2>Key Achievements</h2>
-        <ul>
-          <li>Built Hotstar CI/CD platform from scratch</li>
-          <li>Scaled backend infra for 100M+ users</li>
-          <li>Reduced CI config from 200+ lines to 20</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>M.Sc. in Computer Science</strong> – Delhi University (2014 – 2016)</li>
+  </ul>
+</div>
 
-      <!-- Education -->
-      <div class="section">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>M.Sc. in Computer Science</strong> – Delhi University (2014–2016)</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>Languages:</strong> Java, Kotlin, Swift, Python</li>
+    <li><strong>CI/CD Tools:</strong> GitHub Actions, Jenkins, Gradle, Xcode, Docker, Nexus, Harness</li>
+    <li><strong>Infrastructure:</strong> Terraform, AWS, Remote Caching, Monitoring, Rollbacks, Canary Deployments</li>
+  </ul>
+</div>
 
-      <!-- Skills -->
-      <div class="section">
-        <h2>Skills</h2>
-        <ul>
-          <li><strong>Languages:</strong> Java, Kotlin, Swift, Python</li>
-          <li><strong>CI/CD:</strong> GitHub Actions, Jenkins, Gradle, Nexus</li>
-          <li><strong>Infra:</strong> Terraform, Docker, AWS, Harness</li>
-        </ul>
-      </div>
-
-      <!-- GitHub Stats -->
       <div class="section github-section">
         <h2>GitHub Stats</h2>
-        <img src="https://github-readme-stats.vercel.app/api?username=anuragstar&show_icons=true&theme=default" />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuragstar&layout=compact&theme=default" />
+        <img src="https://github-readme-stats.vercel.app/api?username=anuragstar&show_icons=true&theme=default" alt="Anurag Sinha GitHub Stats">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuragstar&layout=compact&theme=default&langs_count=20" alt="All Languages Used">
       </div>
 
-      <!-- Open Source Projects -->
       <div class="section">
         <h2>Open Source Projects</h2>
         <ul>
-          <li>Client Release Console (CRC)</li>
-          <li>Game Marshall Automation</li>
-          <li>XCRemoteCache for iOS</li>
-          <li>Nexus Mirror for CI/CD</li>
+          <li><strong>Client Release Console (CRC)</strong> – Unified dashboard for Play Store, App Store, and analytics integrations.</li>
+          <li><strong>Game Marshall Automation</strong> – Live match assistant tool for IPL scaling and validations.</li>
+          <li><strong>XCRemoteCache Setup</strong> – Reduced iOS build time across PRs using remote build caching.</li>
+          <li><strong>Nexus Mirror for CI</strong> – Faster Docker pulls, artifact proxying, and versioning for CI/CD pipelines.</li>
         </ul>
       </div>
 
-      <!-- Community Contributions -->
       <div class="section">
         <h2>Dev Community Contributions</h2>
         <ul>
-          <li>Mentor engineers and review infra tools</li>
-          <li>Published SOPs for release and performance</li>
-          <li>Contributed to GitHub Actions & CI scripts</li>
+          <li>Actively mentor junior engineers and review open-source infrastructure tools.</li>
+          <li>Contributed to GitHub Actions optimizations for large monorepos.</li>
+          <li>Published internal SOPs for release automation and CI performance tuning.</li>
+          <li>Built and shared CI/CD scripts for modular service onboarding.</li>
         </ul>
       </div>
 
-      <!-- Private Org Work -->
       <div class="section">
-        <h2>Private Organization Work</h2>
+        <h2>Private Organization Work (Summary)</h2>
         <ul>
-          <li>CI/CD platform for 400+ services</li>
-          <li>10,000+ daily Mac builds using GitHub runners</li>
-          <li>HA artifact stores, rollback infra, telemetry pipelines</li>
+          <li>Designed and maintained a CI/CD platform serving 400+ services within a private org, including one-click rollback, canary deployment, and traffic routing.</li>
+          <li>Handled >10,000 daily Xcode builds with self-hosted macOS runners integrated with GitHub Actions.</li>
+          <li>Deployed high-availability internal artifact repositories and Docker mirrors to reduce CI timeouts and boost developer velocity.</li>
+          <li>Led org-wide migration to new CD stack and implemented standardized pipelines with telemetry for build speed insights.</li>
+          <li>Contributions are private but account for a large share of my GitHub activity and CI innovation.</li>
         </ul>
       </div>
 
-      <!-- GitHub Contribution Graphs -->
       <div class="section">
         <h2>Total GitHub Contributions</h2>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=anuragstar&theme=default" />
-        <img src="https://github-contribution-stats.vercel.app/api/?username=anuragstar" />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=anuragstar&theme=default" alt="GitHub Streak">
+        <img src="https://github-contribution-stats.vercel.app/api/?username=anuragstar" alt="Contribution Stats">
       </div>
     </div>
   </div>
 
   <script>
-    const correctPassword = "anurag2025";
+    const correctPassword = "anurag2025"; // You can change this password
+
     function checkPassword() {
       const input = document.getElementById("password").value;
       if (input === correctPassword) {
