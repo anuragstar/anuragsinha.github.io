@@ -308,12 +308,16 @@
     <!-- Education -->
     <section>
       <h2>Education</h2>
-      <div class="job-header">
+      <div class="job-header" style="margin-bottom: 8px;">
         <div class="job-left">
           <div class="job-title">M.Sc. in Computer Science</div>
           <div class="job-company">Delhi University</div>
         </div>
         <div class="job-meta">2014 – 2016</div>
+      </div>
+      <div style="font-size: 11.5px; color: #64748b; font-weight: 600; margin-bottom: 5px;">Relevant Coursework</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+        ${["Databases", "Operating Systems", "Networking", "Data Mining", "Machine Learning", "Artificial Intelligence", "Text Mining", "Graph Mining", "Compilers", "Data Structures & Algorithms"].map(c => `<span style="background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 4px; padding: 2px 9px; font-size: 11px; color: #334155;">${c}</span>`).join("")}
       </div>
     </section>
 
