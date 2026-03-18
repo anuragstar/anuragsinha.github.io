@@ -6,67 +6,83 @@
 <title>Anurag Sinha | Staff SDE & Platform Engineer</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; color: #1a1a1a; background: #f8fafc; line-height: 1.6; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; color: #1a1a1a; background: #f8fafc; line-height: 1.5; }
   .page { max-width: 960px; margin: 2rem auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); overflow: hidden; }
 
   /* Header */
-  .header { background: #0f172a; color: #fff; padding: 2rem 2.5rem; }
-  .header h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.5px; }
-  .header .role { font-size: 14px; color: #94a3b8; margin: 4px 0 12px; }
-  .contact { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12.5px; }
+  .header { background: #0f172a; color: #fff; padding: 1.75rem 2.5rem; }
+  .header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .header .role { font-size: 13px; color: #94a3b8; margin: 3px 0 10px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; }
   .contact a, .contact span { color: #cbd5e1; text-decoration: none; }
   .contact a:hover { color: #fff; }
-  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
-  .badge { padding: 3px 10px; border-radius: 20px; font-size: 11.5px; font-weight: 500; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .badge { padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; }
   .badge.blue { background: #1e40af; color: #bfdbfe; }
   .badge.green { background: #14532d; color: #bbf7d0; }
   .badge.purple { background: #4c1d95; color: #e9d5ff; }
   .badge.orange { background: #7c2d12; color: #fed7aa; }
 
   /* Body */
-  .body { padding: 2rem 2.5rem; }
-  section { margin-bottom: 2rem; }
-  h2 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2563eb; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #e2e8f0; }
+  .body { padding: 1.75rem 2.5rem; }
+  section { margin-bottom: 1.5rem; }
+  h2 { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2563eb; margin-bottom: 8px; padding-bottom: 5px; border-bottom: 2px solid #e2e8f0; }
 
   /* Summary */
-  .summary { color: #334155; font-size: 13.5px; line-height: 1.7; }
+  .summary { color: #334155; font-size: 13px; line-height: 1.65; }
 
   /* Achievements */
-  .achievement { display: flex; gap: 10px; background: #f0f9ff; border-left: 3px solid #2563eb; padding: 6px 12px; margin-bottom: 6px; font-size: 13px; color: #1e3a5f; border-radius: 0 6px 6px 0; }
+  .achievements { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .achievement { background: #f0f9ff; border-left: 3px solid #2563eb; padding: 5px 10px; font-size: 12px; color: #1e3a5f; border-radius: 0 5px 5px 0; line-height: 1.45; }
 
   /* Experience */
-  .job { margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid #f1f5f9; }
+  .job { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid #f1f5f9; }
   .job:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-  .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
-  .job-title { font-weight: 700; font-size: 14px; color: #0f172a; }
-  .job-company { font-weight: 600; color: #2563eb; font-size: 13.5px; }
-  .job-tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 10.5px; padding: 1px 8px; border-radius: 10px; margin-left: 6px; font-weight: 500; }
-  .job-meta { font-size: 11.5px; color: #64748b; text-align: right; white-space: nowrap; }
-  ul { padding-left: 18px; }
-  ul li { margin-bottom: 4px; color: #334155; font-size: 13px; }
+  .job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 5px; }
+  .job-left { flex: 1; }
+  .job-title { font-weight: 700; font-size: 13.5px; color: #0f172a; }
+  .job-tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 10px; padding: 1px 7px; border-radius: 10px; margin-left: 6px; font-weight: 500; vertical-align: middle; }
+  .job-company { font-weight: 600; color: #2563eb; font-size: 12.5px; margin-top: 1px; }
+  .job-meta { font-size: 11px; color: #64748b; text-align: right; white-space: nowrap; margin-left: 16px; }
+  ul { padding-left: 16px; margin-top: 4px; }
+  ul li { margin-bottom: 3px; color: #334155; font-size: 12.5px; line-height: 1.5; }
 
   /* Projects */
-  .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .project-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 14px; }
-  .project-card:hover { border-color: #2563eb; box-shadow: 0 2px 8px rgba(37,99,235,0.08); }
-  .project-name { font-weight: 700; font-size: 13px; color: #0f172a; margin-bottom: 4px; }
-  .project-desc { font-size: 12px; color: #475569; line-height: 1.5; }
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .project-card { border: 1px solid #e2e8f0; border-radius: 7px; padding: 8px 10px; }
+  .project-name { font-weight: 700; font-size: 12px; color: #0f172a; margin-bottom: 3px; }
+  .project-desc { font-size: 11.5px; color: #475569; line-height: 1.45; }
 
   /* Skills */
-  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 32px; }
-  .skill-row { display: flex; gap: 8px; font-size: 13px; }
-  .skill-label { font-weight: 600; color: #0f172a; min-width: 120px; flex-shrink: 0; }
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 32px; }
+  .skill-row { display: flex; gap: 8px; font-size: 12.5px; }
+  .skill-label { font-weight: 600; color: #0f172a; min-width: 110px; flex-shrink: 0; }
   .skill-val { color: #475569; }
 
   /* Footer */
-  .footer { background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 1rem 2.5rem; text-align: center; font-size: 12px; color: #94a3b8; }
+  .footer { background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 0.75rem 2.5rem; text-align: center; font-size: 11.5px; color: #94a3b8; }
+  .footer a { color: #2563eb; text-decoration: none; }
+
+  /* Print */
+  @media print {
+    body { background: #fff; font-size: 12px; }
+    .page { box-shadow: none; border-radius: 0; margin: 0; max-width: 100%; }
+    .header { border-radius: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .achievement { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    section { page-break-inside: avoid; }
+    .job { page-break-inside: avoid; }
+    .project-card { page-break-inside: avoid; }
+  }
 
   @media (max-width: 640px) {
     .body { padding: 1.25rem; }
     .header { padding: 1.5rem; }
-    .projects-grid, .skills-grid { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr 1fr; }
+    .achievements { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr; }
     .job-header { flex-direction: column; gap: 2px; }
-    .job-meta { text-align: left; }
+    .job-meta { text-align: left; margin-left: 0; }
   }
 </style>
 </head>
@@ -99,19 +115,22 @@
     <!-- Summary -->
     <section>
       <h2>Professional Summary</h2>
-      <p class="summary">Staff SDE with <strong>close to 10 years</strong> of deep expertise in CI/CD, Developer Productivity, and Platform Engineering. Architect of Hotstar's CI/CD platform serving 400+ services and 10,000+ daily builds. Specialist in build & automation for mobile apps (iOS & Android), GitHub self-hosted runner fleets (Linux & Mac), remote build caching, and unified deployment pipelines. Led multi-cloud CI/CD migrations and K8s → Helm rearchitecture at scale. Proven track record of scaling platforms from 1M to 100M+ users while dramatically reducing build times, config complexity, and manual intervention.</p>
+      <p class="summary">Staff SDE with <strong>close to 10 years</strong> of deep expertise in CI/CD, Developer Productivity, and Platform Engineering. Architect of Hotstar's CI/CD platform serving <strong>1000+ services</strong> and <strong>10,000+ daily builds</strong>. Specialist in build & automation for mobile apps (iOS & Android), GitHub self-hosted runner fleets (Linux & Mac), remote build caching, and unified deployment pipelines. Led multi-cloud CI/CD migrations and K8s → Helm rearchitecture at scale. Proven track record of scaling platforms from 1M to 100M+ users while dramatically reducing build times, config complexity, and manual intervention.</p>
     </section>
 
     <!-- Key Achievements -->
     <section>
       <h2>Key Achievements</h2>
-      <div class="achievement">🏗️ Rearchitected K8s deployments for <strong>1000+ services</strong> — migrated from raw manifests to Helm for standardized, scalable release management</div>
-      <div class="achievement">☁️ Led <strong>multi-cloud / cloud-agnostic CI/CD migration</strong> — pipelines fully portable across AWS, GCP & hybrid, eliminating vendor lock-in</div>
-      <div class="achievement">🔔 Designed <strong>alert standardization framework</strong> supporting any cloud — unified alerting, routing & escalation across AWS, GCP and on-prem</div>
-      <div class="achievement">📱 Managed <strong>10,000+ daily Xcode builds</strong> on self-hosted macOS runners integrated with GitHub Actions</div>
-      <div class="achievement">⚡ Implemented XCRemoteCache & Docker remote build caching — significantly reducing iOS & CI build times across all PRs</div>
-      <div class="achievement">🚀 Scaled platform from <strong>1M → 100M+ users</strong> — reduced CI/CD config from 200+ lines to just 20 via modular onboarding</div>
-      <div class="achievement">🤖 Integrated <strong>GenAI into CI/CD</strong> for faster, smarter automated app reviews</div>
+      <div class="achievements">
+        <div class="achievement">🏗️ Rearchitected K8s deployments for <strong>1000+ services</strong> — migrated from raw manifests to Helm for standardized, scalable release management</div>
+        <div class="achievement">☁️ Led <strong>multi-cloud / cloud-agnostic CI/CD migration</strong> — pipelines fully portable across AWS, GCP & hybrid, eliminating vendor lock-in</div>
+        <div class="achievement">🔔 Designed <strong>alert standardization framework</strong> supporting any cloud — unified alerting, routing & escalation across AWS, GCP and on-prem</div>
+        <div class="achievement">📱 Managed <strong>10,000+ daily Xcode builds</strong> on self-hosted macOS runners integrated with GitHub Actions</div>
+        <div class="achievement">⚡ Implemented XCRemoteCache & Docker remote build caching — significantly reducing iOS & CI build times across all PRs</div>
+        <div class="achievement">🚀 Scaled platform from <strong>1M → 100M+ users</strong> — reduced CI/CD config from 200+ lines to just <strong>20 lines</strong> via modular onboarding</div>
+        <div class="achievement">🤖 Integrated <strong>GenAI into CI/CD</strong> for faster, smarter automated app reviews</div>
+        <div class="achievement">⚙️ Built org-wide GitHub Actions templates running <strong>10,000+ PRs</strong> — unified quality gates with zero per-repo config overhead</div>
+      </div>
     </section>
 
     <!-- Experience -->
@@ -120,10 +139,9 @@
 
       <div class="job">
         <div class="job-header">
-          <div>
-            <span class="job-title">Staff Software Engineer</span>
-            <span class="job-tag">Promoted</span>
-            <br><span class="job-company">JioHotstar</span>
+          <div class="job-left">
+            <div><span class="job-title">Staff Software Engineer</span><span class="job-tag">Promoted</span></div>
+            <div class="job-company">JioHotstar</div>
           </div>
           <div class="job-meta">Apr 2025 – Present<br>Remote, India</div>
         </div>
@@ -138,9 +156,9 @@
 
       <div class="job">
         <div class="job-header">
-          <div>
-            <span class="job-title">Senior Software Engineer</span><br>
-            <span class="job-company">JioHotstar</span>
+          <div class="job-left">
+            <div class="job-title">Senior Software Engineer</div>
+            <div class="job-company">JioHotstar</div>
           </div>
           <div class="job-meta">Feb 2025 – Apr 2025<br>Remote, India</div>
         </div>
@@ -152,9 +170,9 @@
 
       <div class="job">
         <div class="job-header">
-          <div>
-            <span class="job-title">Senior Software Engineer</span><br>
-            <span class="job-company">Disney+ Hotstar</span>
+          <div class="job-left">
+            <div class="job-title">Senior Software Engineer</div>
+            <div class="job-company">Disney+ Hotstar</div>
           </div>
           <div class="job-meta">Sep 2022 – Feb 2025<br>Remote, India</div>
         </div>
@@ -168,9 +186,9 @@
 
       <div class="job">
         <div class="job-header">
-          <div>
-            <span class="job-title">SDE-2, Engineering Productivity</span><br>
-            <span class="job-company">Disney+ Hotstar</span>
+          <div class="job-left">
+            <div class="job-title">SDE-2, Engineering Productivity</div>
+            <div class="job-company">Disney+ Hotstar</div>
           </div>
           <div class="job-meta">Apr 2019 – Sep 2022<br>Remote, India</div>
         </div>
@@ -183,9 +201,9 @@
 
       <div class="job">
         <div class="job-header">
-          <div>
-            <span class="job-title">Software Engineer</span><br>
-            <span class="job-company">Deutsche Telekom</span>
+          <div class="job-left">
+            <div class="job-title">Software Engineer</div>
+            <div class="job-company">Deutsche Telekom</div>
           </div>
           <div class="job-meta">Jul 2018 – Apr 2019<br>Gurgaon, India</div>
         </div>
@@ -196,9 +214,9 @@
 
       <div class="job">
         <div class="job-header">
-          <div>
-            <span class="job-title">Software Engineer</span><br>
-            <span class="job-company">Hike Messenger & Snapdeal</span>
+          <div class="job-left">
+            <div class="job-title">Software Engineer</div>
+            <div class="job-company">Hike Messenger & Snapdeal</div>
           </div>
           <div class="job-meta">2016 – 2018<br>Delhi NCR, India</div>
         </div>
@@ -214,15 +232,23 @@
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-name">☁️ Cloud-Agnostic CI/CD Migration</div>
-          <div class="project-desc">Redesigned CI/CD pipelines to be fully portable across AWS, GCP & hybrid — eliminating vendor lock-in for 1000+ services</div>
+          <div class="project-desc">Redesigned pipelines to be fully portable across AWS, GCP & hybrid — eliminating vendor lock-in for 1000+ services</div>
         </div>
         <div class="project-card">
           <div class="project-name">🔔 Alert Standardization Framework</div>
-          <div class="project-desc">Unified alerting supporting any cloud — standardized alert definitions, routing & escalation across AWS, GCP & on-prem</div>
+          <div class="project-desc">Unified alerting layer supporting any cloud — standardized alert definitions, routing & escalation across AWS, GCP & on-prem</div>
         </div>
         <div class="project-card">
           <div class="project-name">🏗️ K8s → Helm Migration (1000+ Services)</div>
-          <div class="project-desc">Rearchitected K8s deployments from raw manifests to Helm — scalable, versioned & standardized release management at scale</div>
+          <div class="project-desc">Rearchitected K8s from raw manifests to Helm — scalable, versioned & standardized release management at scale</div>
+        </div>
+        <div class="project-card">
+          <div class="project-name">🖥️ Self-Hosted Runners (Linux & Mac)</div>
+          <div class="project-desc">Designed & managed org-wide self-hosted Linux & macOS runner fleets powering high-performance CI at scale with zero downtime</div>
+        </div>
+        <div class="project-card">
+          <div class="project-name">⚙️ Org-Wide GitHub Actions — 10,000+ PRs</div>
+          <div class="project-desc">Standardized org-level build & PR check templates across 10,000+ PRs — unified quality gates, zero per-repo config overhead</div>
         </div>
         <div class="project-card">
           <div class="project-name">📱 Client Release Console (CRC)</div>
@@ -230,7 +256,7 @@
         </div>
         <div class="project-card">
           <div class="project-name">🎮 Game Marshall Automation</div>
-          <div class="project-desc">Live match assistant for IPL scaling — autoscaling orchestration & real-time event validation</div>
+          <div class="project-desc">Live match assistant for IPL — autoscaling orchestration & real-time event validation</div>
         </div>
         <div class="project-card">
           <div class="project-name">⚡ XCRemoteCache Setup</div>
@@ -239,14 +265,6 @@
         <div class="project-card">
           <div class="project-name">📦 Nexus Mirror for CI</div>
           <div class="project-desc">Faster Docker pulls, artifact proxying & versioning for CI/CD pipelines with high-availability setup</div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">🖥️ GitHub Self-Hosted Runners (Linux & Mac)</div>
-          <div class="project-desc">Designed & managed org-wide self-hosted Linux & macOS runner fleets — powering high-performance CI workloads at scale with zero downtime</div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">⚙️ Org-Wide GitHub Actions — 10,000+ PRs</div>
-          <div class="project-desc">Built standardized org-level build & PR check templates running across 10,000+ PRs — unified quality gates, consistent checks & zero per-repo config overhead</div>
         </div>
       </div>
     </section>
@@ -273,9 +291,9 @@
     <section>
       <h2>Education</h2>
       <div class="job-header">
-        <div>
-          <span class="job-title">M.Sc. in Computer Science</span><br>
-          <span class="job-company">Delhi University</span>
+        <div class="job-left">
+          <div class="job-title">M.Sc. in Computer Science</div>
+          <div class="job-company">Delhi University</div>
         </div>
         <div class="job-meta">2014 – 2016</div>
       </div>
@@ -284,7 +302,7 @@
   </div>
 
   <div class="footer">
-    Built with ❤️ · <a href="https://github.com/anuragstar" target="_blank" style="color:#2563eb;">github.com/anuragstar</a> · <a href="https://www.linkedin.com/in/anurag-sinha-516417bb/" target="_blank" style="color:#2563eb;">LinkedIn</a>
+    Built with ❤️ · <a href="https://github.com/anuragstar" target="_blank">github.com/anuragstar</a> · <a href="https://www.linkedin.com/in/anurag-sinha-516417bb/" target="_blank">LinkedIn</a>
   </div>
 
 </div>
